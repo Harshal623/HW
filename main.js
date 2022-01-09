@@ -72,7 +72,7 @@ function up()
 
 function down()
 {
-	if(green_y >= 0)
+	if(green_y <= 300)
 	{
 		green_y = green_y + 10;
 		console.log("When up arrow is pressed, x = " + green_x + " | y " + green_y);
@@ -94,7 +94,7 @@ function left()
 
 function right()
 {
-	if(green_x >= 0)
+	if(green_x <= 720)
 	{
 		green_x = green_x + 10;
 		console.log("When up arrow is pressed, x = " + green_x + " | y " + green_y);
